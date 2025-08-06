@@ -21,7 +21,6 @@ export function Header() {
     <header className="bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 border-b border-green-500/20 shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <div className="flex items-center space-x-3">
             <div className="flex items-center justify-center">
               <Image
@@ -40,7 +39,6 @@ export function Header() {
             </div>
           </div>
 
-          {/* Status indicator */}
           <div className="hidden md:flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
             <span className="text-white text-sm font-medium">
@@ -49,9 +47,7 @@ export function Header() {
             <Zap className="h-4 w-4 text-yellow-300" />
           </div>
 
-          {/* Actions */}
           <div className="flex items-center space-x-4">
-            {/* Notifications */}
             <Button
               variant="ghost"
               size="sm"
@@ -65,7 +61,6 @@ export function Header() {
               )}
             </Button>
 
-            {/* User Menu */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button
