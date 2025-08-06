@@ -25,6 +25,11 @@ import { AlertTriangle, MapPin, Upload, X } from "lucide-react";
 import { unidades, locaisEspecificos } from "@/data/data";
 
 export function OccurrenceForm() {
+  const now = new Date();
+  const today = new Date().toISOString().split("T")[0];
+
+  const currentTime = now.toTimeString().split(":").slice(0, 2).join(":");
+
   const [formData, setFormData] = useState({
     title: "",
     description: "",
@@ -32,8 +37,8 @@ export function OccurrenceForm() {
     unit: "",
     location: "",
     reporter: "",
-    date: "",
-    time: "",
+    date: today,
+    time: currentTime,
   });
   const [attachedImages, setAttachedImages] = useState<File[]>([]);
   const { logAction } = useAudit();
