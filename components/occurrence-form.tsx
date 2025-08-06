@@ -85,7 +85,7 @@ export function OccurrenceForm() {
 
   return (
     <div className="max-w-4xl mx-auto gap-2">
-      <Card>
+      <Card className="py-4">
         <CardHeader>
           <CardTitle className="flex items-center text-2xl">
             <AlertTriangle className="mr-3 h-6 w-6 text-red-500" />

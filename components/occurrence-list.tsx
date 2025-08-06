@@ -170,7 +170,7 @@ export function OccurrenceList() {
   return (
     <div className="space-y-6">
       {/* Enhanced Header */}
-      <Card className="border-0 shadow-lg">
+      <Card className="border-0 shadow-lg py-4">
         <CardHeader>
           <CardTitle className="flex items-center text-xl">
             <AlertTriangle className="mr-3 h-6 w-6 text-blue-600" />
@@ -186,7 +186,7 @@ export function OccurrenceList() {
       </Card>
 
       {/* Enhanced Filters */}
-      <Card className="border-0 shadow-lg">
+      <Card className="border-0 shadow-lg py-4">
         <CardHeader>
           <CardTitle className="flex items-center text-lg">
             <Filter className="mr-2 h-5 w-5 text-gray-600" />
